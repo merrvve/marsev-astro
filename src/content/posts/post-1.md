@@ -1,11 +1,11 @@
 ---
-title: "How to make toys from old Olarpaper"
+title: "BiBAK - 2. Ulusal 1. Basamak Sağlık Hizmetleri Kongresi"
 description: "meta description"
-date: 2022-04-01T05:00:00Z
-image: "/images/posts/01.jpg"
-categories: ["art"]
-authors: ["Mark Dinn"]
-tags: ["diy", "toy"]
+date: 2024-04-01T05:00:00Z
+image: "/images/posts/kongre-duyuru.jpg"
+categories: ["etkinlik"]
+authors: ["MARSEV"]
+tags: ["kongre", "etkinlik"]
 draft: false
 ---
 

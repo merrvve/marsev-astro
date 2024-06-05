@@ -1,52 +1,64 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Ana Sayfa",
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
-    },
-    {
-      "name": "Pages",
-      "url": "",
+      "name": "Kurumsal",
+      "url": "/about",
       "hasChildren": true,
       "children": [
         {
-          "name": "Authors",
+          "name": "Amaçlar ve Hedefler",
+          "url": "/about"
+        },
+        {
+          "name": "Yönetim Kurulu",
           "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        },
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
         }
       ]
+    },
+    
+    {
+      "name": "Duyurular",
+      "url": "/categories",
+      "hasChildren": true,
+      "children": [
+        {
+        "name": "Kitaplar",
+        "url": "/categories/kitap"
+      },
+      {
+        "name": "Etkinlikler",
+        "url": "/categories/etkinlik"
+      },
+      {
+        "name": "Kategoriler",
+        "url": "/categories"
+      },
+      {
+        "name": "Etiketler",
+        "url": "/tags"
+      }
+    ]
+    },
+    {
+      "name": "İletişim",
+      "url": "/contact"
+    },
+    {
+      "name": "Bağış",
+      "url": "/contact"
     }
   ],
   "footer": [
     {
-      "name": "About",
+      "name": "Hakkımızda",
       "url": "/about"
     },
     {
-      "name": "Contact",
+      "name": "İletişim",
       "url": "/contact"
     },
     {

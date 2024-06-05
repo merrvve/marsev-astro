@@ -1,4 +1,4 @@
 ---
-title: "İletişim"
+title: "Kayıt"
 draft: false
 ---

@@ -5,7 +5,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 import { FaAddressCard, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
-const entry = await getEntryBySlug("pages", "contact");
+const entry = await getEntryBySlug("pages", "register");
 const { contact_form_action } = config.params;
 const { address, email, phone } = config.contactinfo;
 const { title, description, meta_title, image } = entry.data;
@@ -22,7 +22,7 @@ const { title, description, meta_title, image } = entry.data;
       <h1 set:html={markdownify(title)} class="h2 page-heading" />
       <div class="row md:gx-5 gy-5">
         <div class="sm:col-5 md:col-4">
-          <p class="mb-8 text-2xl font-bold text-theme-dark">İletişim</p>
+          <p class="mb-8 text-2xl font-bold text-theme-dark">Kurs Kaydı</p>
           <ul class="flex flex-col space-y-8">
             <li>
               <div class="flex text-theme-dark items-center text-xl">
@@ -66,11 +66,11 @@ const { title, description, meta_title, image } = entry.data;
               />
             </div>
             <div class="col-12">
-              <label class="mb-2 block" for="message">Mesaj <span class="text-red-600">*</span></label>
+              <label class="mb-2 block" for="message">Message <span class="text-red-600">*</span></label>
               <textarea class="form-textarea w-full" rows="4"></textarea>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary mt-2">Gönder</button>
+              <button class="btn btn-primary mt-2">Submit Now</button>
             </div>
           </form>
         </div>

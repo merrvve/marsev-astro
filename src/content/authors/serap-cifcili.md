@@ -1,6 +1,6 @@
 ---
-title: Mark Dinn
-image: /images/authors/mark-dinn.jpg
+title: Prof. Dr. Saliha Serap Çifçili
+image: /images/authors/serapc.png
 description: this is meta description
 social:
   facebook: https://www.facebook.com/

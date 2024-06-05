@@ -1,6 +1,6 @@
 ---
-title: John Doe
-image: /images/authors/john-doe.jpg
+title: Prof. Dr. Çiğdem Apaydın Kaya
+image: /images/authors/cigdemap.png
 description: this is meta description
 social:
   facebook: https://www.facebook.com/
