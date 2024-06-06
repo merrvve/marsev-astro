@@ -103,7 +103,7 @@ const { title, description, authors, categories, image, date, tags } =
                 <strong>TR78 0001 5001 5800 7316 4737 98</strong>
                 </p>
         </div>
-        <form class="contact-form row gy-2 justify-center mb-10" method="POST">
+        <form class="contact-form row gy-2 justify-center mb-10" >
             <div class="lg:col-6">
               <label class="mb-2 block" for="name">İsim <span class="text-red-600">*</span></label>
               <input class="form-input w-full" name="name" type="text" required />
@@ -127,11 +127,10 @@ const { title, description, authors, categories, image, date, tags } =
                 name="subject"
                 type="text"
                 value={title}
-                disabled
               />
             </div>
             <div class="col-12">
-              <button class="btn btn-primary mt-2">Sipariş Talebi Oluştur</button>
+              <button class="btn btn-primary mt-2" type="submit">Sipariş Talebi Oluştur</button>
             </div>
           </form>
   
@@ -163,3 +162,33 @@ const { title, description, authors, categories, image, date, tags } =
   </div>
 </section>
 
+<script>
+  const form = document.querySelector('form');
+  if(form) {
+    form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(form);
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        adres: formData.get('adres'),
+        book: formData.get('subject'),
+        
+    };
+    fetch('https://script.google.com/macros/s/AKfycby4SLG4R1SeQDYrV35bMak8CYfg9M0_Mqi--vJxY5dCOltru1KtvcJVDxk_pcet7lSlRw/exec', {
+        method: 'POST',
+        mode: "no-cors",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(next =>console.log("success"))
+    .catch(error => console.error('Error:', error));
+    });
+
+  }
+
+</script>
