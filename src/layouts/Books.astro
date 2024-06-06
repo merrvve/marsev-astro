@@ -13,15 +13,15 @@ const { className, books, fluid } = Astro.props;
 <div class={`row gy-5 gx-4 ${className} ${books.length == 1 ? "justify-center" : ""} `}>
   {
     books.map((book: any, i: number) => (
-      <div class={i === 0 && fluid != false ? "col-12" : "col-12 sm:col-6"}>
+      <div class="col-12 sm:col-4">
         {book.data.image && (
           <a href={`/books/${book.slug}`} class="rounded-lg block hover:text-primary overflow-hidden group">
             <Image
               class="group-hover:scale-[1.03] transition duration-300 w-full"
               src={book.data.image}
               alt={book.data.title}
-              width={i === 0 ? 925 : 445}
-              height={i === 0 ? 475 : 230}
+              width="445"
+              height="260"
             />
           </a>
         )}

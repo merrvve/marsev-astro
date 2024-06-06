@@ -3,7 +3,6 @@ import { Image } from "astro:assets";
 import Share from "@/components/Share.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
-import similerItems from "@/lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi";
 
@@ -80,8 +79,8 @@ const { title, description, authors, categories, image, date, tags } =
           image && (
             <Image
               src={image}
-              height={500}
-              width={1000}
+              height={260}
+              width={480}
               alt={title}
               class="rounded-lg"
             />

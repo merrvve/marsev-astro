@@ -21,14 +21,10 @@
     },
     
     {
-      "name": "Duyurular",
+      "name": "Etkinlikler",
       "url": "/categories",
       "hasChildren": true,
       "children": [
-        {
-        "name": "Kitaplar",
-        "url": "/books"
-      },
       {
         "name": "Etkinlikler",
         "url": "/categories/etkinlik"
@@ -48,8 +44,13 @@
       "url": "/contact"
     },
     {
+      "name": "Kitaplar",
+      "url": "/books"
+    },
+    
+    {
       "name": "Bağış",
-      "url": "/contact"
+      "url": "/bagis"
     }
   ],
   "footer": [
@@ -66,8 +67,8 @@
       "url": "/elements"
     },
     {
-      "name": "Privacy Policy",
-      "url": "/privacy-policy"
+      "name": "Bağış",
+      "url": "/bagis"
     }
   ]
 }

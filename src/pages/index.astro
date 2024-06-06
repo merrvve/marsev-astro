@@ -28,6 +28,7 @@ const currentBooks = sortedBooks.slice(0, config.settings.pagination);
   </section>
   <section class="section">
     <div class="container">
+      <h2 class="mb-5">Kitaplar</h2>
       <Books books={currentBooks} className="mb-16" />
       <Pagination currentPage={1} totalPages={totalPagesOfBooks} />
     </div>
