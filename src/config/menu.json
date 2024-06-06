@@ -27,7 +27,7 @@
       "children": [
         {
         "name": "Kitaplar",
-        "url": "/categories/kitap"
+        "url": "/books"
       },
       {
         "name": "Etkinlikler",
