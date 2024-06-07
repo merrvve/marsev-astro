@@ -1,8 +1,6 @@
 ---
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
-import { getTaxonomy } from "@/lib/taxonomyParser.astro";
-import { humanize } from "@/lib/utils/textConverter";
 import Books from "@/layouts/Books.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
@@ -12,8 +10,6 @@ const books = await getSinglePage("books");
 const sortedBooks = sortByDate(books);
 const totalPagesOfBooks = Math.ceil(books.length / config.settings.pagination);
 const currentBooks = sortedBooks.slice(0, config.settings.pagination);
-
-import { BiCategoryAlt } from "react-icons/bi";
 ---
 <Base title="">
   <section class="section">

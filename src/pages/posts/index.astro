@@ -1,0 +1,21 @@
+---
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import Posts from "@/layouts/Posts.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import Pagination from "@/layouts/components/Pagination.astro";
+
+const posts = await getSinglePage("posts");
+const sortedPosts = sortByDate(posts);
+const totalPagesOfPosts = Math.ceil(posts.length / config.settings.pagination);
+const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+---
+<Base title="">
+  <section class="section">
+    <div class="container">
+      <Posts posts={currentPosts} className="mb-16" />
+      <Pagination currentPage={1} totalPages={totalPagesOfPosts} />
+    </div>
+  </section>
+</Base>

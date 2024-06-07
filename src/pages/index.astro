@@ -6,11 +6,11 @@ import Posts from "@/layouts/Posts.astro";
 import Books from "@/layouts/Books.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
+import { BsArrowRightCircle } from "react-icons/bs";
 
 const posts = await getSinglePage("posts");
 const sortedPosts = sortByDate(posts);
-const totalPages = Math.ceil(posts.length / config.settings.pagination);
-const currentPosts = sortedPosts.slice(0, config.settings.pagination);
+const currentPosts = sortedPosts.slice(0, config.settings.featured);
 
 const books = await getSinglePage("books");
 const sortedBooks = sortByDate(books);
@@ -23,7 +23,15 @@ const currentBooks = sortedBooks.slice(0, config.settings.pagination);
   <section class="section">
     <div class="container">
       <Posts posts={currentPosts} className="mb-16" />
-      <Pagination currentPage={1} totalPages={totalPages} />
+      <div class="flex justify-end">
+        <a
+        href={`/posts`}
+        class="inline-flex items-center text-primary transition duration-200 hover:opacity-70"
+      >
+        Tümünü Gör <BsArrowRightCircle className="inline ml-2" />
+      </a>
+      </div>
+      
     </div>
   </section>
   <section class="section">

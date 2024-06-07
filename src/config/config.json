@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "MAR-SEV | Marmara Sağlık Eğitim ve Araştırma Vakfı",
-    "base_url": "https://bookworm-light-astro.vercel.app",
+    "base_url": "https://marsev.org",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -12,8 +12,9 @@
   },
 
   "settings": {
-    "pagination": 3,
-    "summary_length": 100
+    "pagination": 5,
+    "summary_length": 100,
+    "featured": 3
   },
 
   "metadata": {
