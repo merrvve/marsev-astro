@@ -10,7 +10,7 @@ const allAuthors = await getSinglePage("authors");
 const books = await getSinglePage("books");
 const { book } = Astro.props;
 const { Content } = await book.render();
-const { title, description, authors, categories, image, date, tags } =
+const { title, description, categories, image, date, tags, price } =
   book.data;
 ---
 
@@ -21,31 +21,7 @@ const { title, description, authors, categories, image, date, tags } =
         <h1 set:html={markdownify(title)} class="h2" />
         <ul class="mt-4 flex flex-wrap items-center justify-center text-text">
           <li class="mx-3">
-            {
-              allAuthors
-                .filter((author) =>
-                  authors
-                    .map((author: string) => slugify(author))
-                    .includes(slugify(author.data.title)),
-                )
-                .map((author, i) => (
-                  <a
-                    href={`/authors/${slugify(author.slug)}`}
-                    class="flex items-center hover:text-primary font-medium"
-                  >
-                    {author.data.image && (
-                      <Image
-                        src={author.data.image}
-                        alt={author.data.title}
-                        height={50}
-                        width={50}
-                        class="mr-2 h-6 w-6 rounded-full"
-                      />
-                    )}
-                    <span>{author.data.title}</span>
-                  </a>
-                ))
-            }
+            Fiyat: {price}
           </li>
           <li class="mx-3 flex items-center flex-wrap font-medium">
             <BiCalendarEdit className="mr-1 h-5 w-5 text-gray-600" />
@@ -133,7 +109,7 @@ const { title, description, authors, categories, image, date, tags } =
               <button class="btn btn-primary mt-2" type="submit">Sipariş Talebi Oluştur</button>
             </div>
           </form>
-  
+  <div id="formMessage" class="flex justify-center"></div>
 
         <div class="flex flex-wrap items-center justify-between">
           <ul class="mr-4 mb-4 space-x-3">
@@ -185,8 +161,18 @@ const { title, description, authors, categories, image, date, tags } =
         },
         body: JSON.stringify(data)
     })
-    .then(next =>console.log("success"))
-    .catch(error => console.error('Error:', error));
+    .then(next =>{
+      const message = document.createElement('p');
+      message.innerHTML="Siparişiniz Başarıyla oluşturuldu."
+      document.getElementById('formMessage')?.appendChild(message);
+      window.alert("Siparişiniz başarıyla iletildi.")
+      window.history.back();
+    })
+    .catch(error => {
+      const message = document.createElement('p');
+      message.innerHTML="Siparişiniz iletilirken bir hatayla karşılaşıldı."
+      document.getElementById('formMessage')?.appendChild(message)
+    });
     });
 
   }

@@ -1,22 +1,20 @@
 ---
-title: What you need to know about Photography
+title: Multidisipliner Çalışmada Geri Bildirim Ve Refleksiyon Kursu
 description: "meta description"
-date: 2022-04-03T06:00:00+00:00
-image: "/images/posts/03.jpg"
-categories: ["art"]
-authors: ["Mark Dinn"]
-tags: ["diy", "toy"]
+date: 2024-03-07T06:00:00+00:00
+image: "/images/posts/multidisipliner.webp"
+categories: ["kurs"]
+authors: ["MARSEV"]
+tags: ["refleksiyon", "geri bildirim","multidisipliner çalışma"]
 draft: false
 ---
+BiBAK kapsamında "Multidisipliner Çalışmada Geri Bildirim Ve Refleksiyon Kursu" 2024 yılı Mart ayında düzenlenmiştir.
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
-
-## Creative Design
-
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+### Kurs Eğiticileri: 
+- Prof. Dr. Arzu Uzuner, 
+- Prof. Dr. Mehmet Akman, 
+- Doç. Dr. Gülten Okuroğlu, 
+- Doç. Dr. Kamer Gür, 
+- Dr. Öğrt. Üyesi Ülkü Sunal. 
+### Moderatör: 
+- Uzm.Dr. Yasemin Doğan Kaya

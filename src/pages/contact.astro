@@ -6,7 +6,6 @@ import { getEntryBySlug } from "astro:content";
 import { FaAddressCard, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const entry = await getEntryBySlug("pages", "contact");
-const { contact_form_action } = config.params;
 const { address, email, phone } = config.contactinfo;
 const { title, description, meta_title, image } = entry.data;
 ---
@@ -48,9 +47,9 @@ const { title, description, meta_title, image } = entry.data;
           </ul>
         </div>
         <div class="sm:col-7 md:col-8">
-          <form class="contact-form row gy-2 justify-center" method="POST" action={contact_form_action}>
+          <form class="contact-form row gy-2 justify-center">
             <div class="lg:col-6">
-              <label class="mb-2 block" for="name">Name <span class="text-red-600">*</span></label>
+              <label class="mb-2 block" for="name">İsim <span class="text-red-600">*</span></label>
               <input class="form-input w-full" name="name" type="text" required />
             </div>
             <div class="lg:col-6">
@@ -58,7 +57,7 @@ const { title, description, meta_title, image } = entry.data;
               <input class="form-input w-full" name="email" type="email" required />
             </div>
             <div class="col-12">
-              <label class="mb-2 block" for="subject">Subject</label>
+              <label class="mb-2 block" for="subject">Konu</label>
               <input
                 class="form-input w-full"
                 name="subject"
@@ -67,10 +66,10 @@ const { title, description, meta_title, image } = entry.data;
             </div>
             <div class="col-12">
               <label class="mb-2 block" for="message">Mesaj <span class="text-red-600">*</span></label>
-              <textarea class="form-textarea w-full" rows="4"></textarea>
+              <textarea class="form-textarea w-full" rows="4" name="message"></textarea>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary mt-2">Gönder</button>
+              <button type="submit" class="btn btn-primary mt-2">Gönder</button>
             </div>
           </form>
         </div>
@@ -78,3 +77,43 @@ const { title, description, meta_title, image } = entry.data;
     </div>
   </section>
 </Base>
+
+<script>
+  const form = document.querySelector('form');
+  if(form) {
+    form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(form);
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        subject: formData.get('subject'),
+        message: formData.get('message'),
+        
+    };
+    fetch('https://script.google.com/macros/s/AKfycbz0i3Dm4aMl4vpjxRcljXoGCrVYfpPOMn3Jo7qeL4D3p2LFqY5BlcQZYcWts3Gi5t5A/exec', {
+        method: 'POST',
+        mode: "no-cors",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(next =>{
+      // const message = document.createElement('p');
+      // message.innerHTML="Siparişiniz Başarıyla oluşturuldu."
+      // document.getElementById('formMessage')?.appendChild(message);
+      window.alert("Mesajınız başarıyla iletildi.")
+      window.history.back();
+    })
+    .catch(error => {
+      const message = document.createElement('p');
+      message.innerHTML="Mesajınız iletilirken bir hatayla karşılaşıldı."
+      document.getElementById('formMessage')?.appendChild(message)
+    });
+    });
+
+  }
+
+</script>
