@@ -7,7 +7,7 @@ categories: ["kitap"]
 authors: ["MARSEV"]
 tags: ["adölesan sağlığı"]
 draft: false
-price: "300 TL"
+price: "500 TL"
 ---
 
 Adölesan Sağlığı - Koruyucu Hekimlik ve Erken Tanı

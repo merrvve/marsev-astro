@@ -9,4 +9,12 @@ tags: ["kongre", "etkinlik"]
 draft: false
 ---
 
-BiBAK - 2. Ulusal 1. Basamak Sağlık Hizmetleri Kongresi
+Değerli meslektaşlarımız BiBaK'25 ile karşınızdayız 🩺, 
+
+📢 Birinci Basamağın çalışanları olarak, bilimsel ve sosyal bir ortamda bir arada bulunmak üzere sizleri bu yıl 2.sini düzenleyeceğimiz 2. Ulusal Birinci Basamak Sağlık Hizmetleri Kongresi'ne(BiBaK'25) davet ediyoruz.
+
+⚕ Aktif katılımlarınızı, özgün fikirlerinizi ve değerli araştırmalarınızı bizlerle paylaşmanızı bekliyoruz.
+
+Detaylar için takipte kalın 🔔
+
+MARSEV Marmara Sağlık Eğitim ve Araştırma Vakfı Yönetim Kurulu

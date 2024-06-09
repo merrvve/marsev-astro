@@ -7,7 +7,7 @@ categories: ["kitap"]
 authors: ["Serap Çifçili"]
 tags: ["yaşlı sağlığı", "geriatri"]
 draft: false
-price: "300 TL"
+price: "500 TL"
 ---
 
 Yaşlı Sağlığına Bütüncül Yaklaşım

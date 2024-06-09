@@ -7,7 +7,7 @@ categories: ["kitap"]
 authors: ["McWhinney"]
 tags: ["aile hekimliği", "textbook"]
 draft: false
-price: "400 TL"
+price: "600 TL"
 ---
 
 MCWhinney Aile Hekimliği
