@@ -6,7 +6,6 @@ import { getEntryBySlug } from "astro:content";
 import { FaAddressCard, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const entry = await getEntryBySlug("pages", "register");
-const { contact_form_action } = config.params;
 const { address, email, phone } = config.contactinfo;
 const { title, description, meta_title, image } = entry.data;
 ---
@@ -48,7 +47,7 @@ const { title, description, meta_title, image } = entry.data;
           </ul>
         </div>
         <div class="sm:col-7 md:col-8">
-          <form class="contact-form row gy-2 justify-center" method="POST" action={contact_form_action}>
+          <form class="contact-form row gy-2 justify-center">
             <div class="lg:col-6">
               <label class="mb-2 block" for="name">Name <span class="text-red-600">*</span></label>
               <input class="form-input w-full" name="name" type="text" required />

@@ -1,0 +1,27 @@
+---
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import { getEntryBySlug } from "astro:content";
+const entry = await getEntryBySlug("pages", "bagis");
+const { Content } = await entry.render();
+---
+
+<Base title={entry.data.title}>
+ 
+  <section class="section">
+    <div class="container">
+      <div class="row md:gx-4">
+        <div class="col-12">
+          <h1 set:html={markdownify(entry.data.title)} class="h3 mb-8" />
+
+          <div class="content">
+            <Content />
+          </div>
+          
+        </div>
+   
+        
+      </div>
+    </div>
+  </section>
+</Base>
