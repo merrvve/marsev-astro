@@ -1,20 +1,16 @@
 ---
-title: "BiBAK - 2. Ulusal 1. Basamak Sağlık Hizmetleri Kongresi"
-description: "meta description"
-date: 2024-04-01T05:00:00Z
-image: "/images/posts/kongre-duyuru.webp"
+title: "Şiddete Maruz Kalan Kadınlara Yönelik Sağlık Hizmet Mekanizmalarının Güçlendirilmesi Toplantısı"
+description: "Birinci Basamak Sağlık Çalışanları Kadına Yönelik Şiddeti Önleme Eğitim ve Farkındalık Grubu olarak İstanbul’da TAP Vakfı ve diğer katılımcılar ile bir araya geldik"
+date: 2024-08-14T05:00:00Z
+image: "/images/posts/tap-2.webp"
 categories: ["etkinlik"]
 authors: ["MARSEV"]
-tags: ["kongre", "etkinlik"]
+tags: ["kadın yönelik şiddet", "toplantı","kadınlara yönelik sağlık hizmetleri"]
 draft: false
 ---
 
-Değerli meslektaşlarımız BiBaK'25 ile karşınızdayız 🩺, 
+Şiddete Maruz Kalan Kadınlara Yönelik Sağlık Hizmet Mekanizmalarının Güçlendirilmesi Toplantısı
 
-📢 Birinci Basamağın çalışanları olarak, bilimsel ve sosyal bir ortamda bir arada bulunmak üzere sizleri bu yıl 2.sini düzenleyeceğimiz 2. Ulusal Birinci Basamak Sağlık Hizmetleri Kongresi'ne(BiBaK'25) davet ediyoruz.
+🙋‍♀ TAP Vakfı ve UNWomen tarafından yürütülen “Şiddete Maruz Kalan Kadınlara Yönelik Sağlık Hizmet Mekanizmalarının Güçlendirilmesi Projesi” sonrası, Birinci Basamak Sağlık Çalışanları Kadına Yönelik Şiddeti Önleme Eğitim ve Farkındalık Grubu olarak İstanbul’da TAP Vakfı ve diğer katılımcılar ile bir araya geldik 👩‍⚕.
 
-⚕ Aktif katılımlarınızı, özgün fikirlerinizi ve değerli araştırmalarınızı bizlerle paylaşmanızı bekliyoruz.
-
-Detaylar için takipte kalın 🔔
-
-MARSEV Marmara Sağlık Eğitim ve Araştırma Vakfı Yönetim Kurulu
+📌 Birinci basamakta kadına şiddet vakalarının yönetimi, şiddetle mücadelede atılması gereken adımlar ve şiddete maruz kalan kadınları yönlendirmek için doğru ve etkili girişimlerin planlandığı verimli bir toplantı gerçekleştirdik 📝.
