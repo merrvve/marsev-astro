@@ -1,7 +1,7 @@
 ---
 title: "BiBAK - 2. Ulusal 1. Basamak Sağlık Hizmetleri Kongresi"
 description: "meta description"
-date: 2024-04-01T05:00:00Z
+date: 2024-10-01T05:00:00Z
 image: "/images/posts/kongre-duyuru.webp"
 categories: ["etkinlik"]
 authors: ["MARSEV"]
