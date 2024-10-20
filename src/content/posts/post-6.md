@@ -10,3 +10,7 @@ draft: false
 ---
 
 Asistan ve Genç Uzman Hekimler İçin Bilimsel Araştırma ve Tez Yazım Kursu
+
+İstanbul Tabip Odasi ve Marmara Sağlık Eğitim Araştırma Vakfı İşbirliği ile düzenlenen 'Asistan ve Genç Uzman Hekimler İçin Bilimsel Araştırma ve Tez Yazım Kursu'na katılmak için:
+                                                                            
+[Bu linke tıklayın.](https://istabip.org.tr/8128-tibbi-ingilizce-kursu-bilimsel-arastirmalar-ve-tez-yazim-kursu-basliyor.html "İstanbul Tabip Odası") tıklayın.
