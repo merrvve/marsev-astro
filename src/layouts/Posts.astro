@@ -8,12 +8,13 @@ import { BiCalendarEdit,BiCategoryAlt } from "react-icons/bi";
 const authors = await getSinglePage("authors");
 const { summary_length } = config.settings;
 const { className, posts, fluid } = Astro.props;
+
 ---
 
 <div class={`row gy-5 gx-4 ${className} ${posts.length == 1 ? "justify-center" : ""} `}>
   {
     posts.map((post: any, i: number) => (
-      <div class={i === 0 && fluid != false ? "col-12" : "col-12 sm:col-6"}>
+      <div class={(fluid === true) ? "col-12" : "col-12 sm:col-6"}>
         {post.data.image && (
           <a href={`/posts/${post.slug}`} class="rounded-lg block hover:text-primary overflow-hidden group">
             <Image

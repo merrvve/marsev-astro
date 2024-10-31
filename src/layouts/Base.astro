@@ -172,7 +172,7 @@ const { title, meta_title, description, image, noindex, canonical } =
   <body>
     <TwSizeIndicator />
     <Header />
-    <main id="main-content" class="min-h-[60vh]" transition:animate={fade({ duration: '0.4s' })}>
+    <main id="main-content" class="min-h-[60vh] max-w-[75%] mx-auto" transition:animate={fade({ duration: '0.4s' })}>
       <slot />
     </main>
     <Footer />
