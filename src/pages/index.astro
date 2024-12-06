@@ -15,7 +15,7 @@ import { FaHashtag } from "react-icons/fa";
 const tags = await getTaxonomy("posts", "tags");
 const posts = await getSinglePage("posts");
 const sortedPosts = sortByDate(posts);
-const currentPosts = sortedPosts.filter(post=> post.data.date ? post.data.date >= new Date() : false);
+const currentPosts = sortedPosts.slice(0,1)
 const pastEvents = sortedPosts.filter(post=> post.data.date ? post.data.date < new Date() : false).slice(0,4)
 
 const books = await getSinglePage("books");
@@ -33,7 +33,7 @@ const categories = await getTaxonomy("posts", "categories");
     <div class="col-span-2">
       <section class="section">
         <div class="container mb-40">
-         
+          <h1 class="h2 mb-5">Duyurular</h1>
           <Posts posts={currentPosts} className="mb-16" fluid={true} />
           <hr class="my-10"/>
          </div>

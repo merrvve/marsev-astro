@@ -5,7 +5,7 @@ date: 2024-08-14T05:00:00Z
 image: "/images/posts/tap-2.webp"
 categories: ["etkinlik"]
 authors: ["MARSEV"]
-tags: ["kadın yönelik şiddet", "toplantı","kadınlara yönelik sağlık hizmetleri"]
+tags: ["kadına yönelik şiddet", "toplantı","kadın sağlığı"]
 draft: false
 ---
 
