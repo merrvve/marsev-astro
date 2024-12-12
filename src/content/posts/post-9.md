@@ -15,6 +15,8 @@ draft: false
 
 ⏱ Bildiri gönderimi için son tarih: 15 Ocak 2025
 
+Kongre kitabına [buradan](/docs/bibak2024.pdf) ulaşabilirsiniz.
+
 📝 Detaylar ve kayıt için: www.bibak-marsev.org
 
 Marmara Sağlık Eğitim ve Araştırma Vakfı (MARSEV) Yönetim Kurulu
