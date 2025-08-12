@@ -15,7 +15,7 @@ import { FaHashtag } from "react-icons/fa";
 const tags = await getTaxonomy("posts", "tags");
 const posts = await getSinglePage("posts");
 const sortedPosts = sortByDate(posts);
-const currentPosts = sortedPosts.slice(0,2)
+const currentPosts = sortedPosts.slice(0,1)
 const pastEvents = sortedPosts.filter(post=> post.data.date ? post.data.date < new Date() : false).slice(1,5)
 
 const books = await getSinglePage("books");
@@ -29,16 +29,30 @@ const categories = await getTaxonomy("posts", "categories");
 ---
 
 <Base>
-  <div class="grid grid-cols-1 sm:grid-cols-3">
-    <div class="col-span-2">
+  <div class="grid grid-cols-1 md:grid-cols-5">
+    <div class="col-span-1">
       <section class="section">
         <div class="container mb-40">
-          <h1 class="h2 mb-5">Duyurular</h1>
+          <h1 class="h5 mb-5">Duyurular</h1>
           <Posts posts={currentPosts} className="mb-16" fluid={true} />
           <hr class="my-10"/>
          </div>
          
-        <div class="container">
+        
+      </section>
+         </div>
+    <div class="col-span-3">
+      <section class="section">
+        <div class="container mb-40">
+          <h1 class="h2 mb-5">MARSEV</h1>
+          Marmara Sağlık Eğitim ve Araştırma Vakfı, birinci basamak sağlık hizmetleri konusunda projeler oluşturarak birinci basamak sağlık hizmetlerine ve eğitimine katkı sağlamak ve Türkiye’de yaşayan herkese eşit, dengeli ve mümkün olan en yüksek düzeyde koruyucu ve iyileştirici sağlık hizmetleri ile eğitim ve diğer sosyal hizmetleri etkin bir biçimde sunabilmek için mezuniyet öncesi, mezuniyet sonrası ve hizmet içi eğitim yapan her düzeyde eğitim kurumları açmak, işletmek, seminerler, kurslar düzenlemek amacıyla hizmet veren bir vakıf kuruluşudur.
+          <hr class="my-10"/>
+         </div>
+         
+      
+      </section>
+     <section class="section">
+    <div class="container">
           <h1 class="h2 mb-5">Geçmiş Etkinlikler</h1>
           <Posts posts={pastEvents} className="mb-16" />
           <div class="flex justify-end">
@@ -51,8 +65,8 @@ const categories = await getTaxonomy("posts", "categories");
           </div>
           
         </div>
-      </section>
-      <section class="section">
+  </section>
+   <section class="section">
         <div class="container">
           <h2 class="mb-5">Kitaplar</h2>
           <Books books={currentBooks} className="mb-16" />
@@ -60,10 +74,11 @@ const categories = await getTaxonomy("posts", "categories");
         </div>
       </section>
     </div>
+    
     <div class="col-span-1">
       <section class="pt-20 mb-5">
         <div class="container text-center">
-          <h1 class="h2 mb-3">Kategoriler</h1>
+          <h1 class="h5 mb-3">Kategoriler</h1>
           <ul class="mx-4">
             {
               categories.map((category) => (
@@ -103,5 +118,7 @@ const categories = await getTaxonomy("posts", "categories");
       </section>
     </div>
   </div>
+  
+
   
 </Base>

@@ -18,12 +18,13 @@ export interface NavigationLink {
 const { main }: { main: NavigationLink[] } = menu;
 ---
 
-<header class="header pt-6">
-  <nav class="navbar container">
-    <!-- logo -->
-    <div class="order-0">
+<header class=" pt-6">
+  <div class="ml-3 sm:ml-60">
       <Logo />
     </div>
+  <nav class="order-0 navbar container bg-gradient-to-br from-sky-100 to-sky-300 rounded-lg ">
+    <!-- logo -->
+    
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
