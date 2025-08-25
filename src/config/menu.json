@@ -5,17 +5,25 @@
       "url": "/"
     },
     {
-      "name": "Kurumsal",
+      "name": "Hakkımızda",
       "url": "/about",
       "hasChildren": true,
       "children": [
         {
-          "name": "Amaçlar ve Hedefler",
+          "name": "Kuruluş Amacı",
           "url": "/about"
         },
         {
+          "name": "Tarihçe",
+          "url": "/about"
+        },
+        {
+          "name": "Faaliyet Alanları",
+          "url": "/areas"
+        },
+        {
           "name": "Yönetim Kurulu",
-          "url": "/authors"
+          "url": "/board"
         }
       ]
     },

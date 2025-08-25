@@ -6,7 +6,7 @@ import { getEntryBySlug } from "astro:content";
 
 const entry = await getEntryBySlug("about", "index");
 const { Content } = await entry.render();
-const { title, description, meta_title, image, what_i_do } = entry.data;
+const { title, description, meta_title, image } = entry.data;
 ---
 
 <Base
@@ -46,7 +46,7 @@ const { title, description, meta_title, image, what_i_do } = entry.data;
     </div>
   </section>
 
-  <section class="section pt-0">
+  <!-- <section class="section pt-0">
     <div class="container">
       <h3 class="page-heading mb-20">{what_i_do.title}</h3>
       <div class="row justify-center gy-4 text-center">
@@ -61,5 +61,5 @@ const { title, description, meta_title, image, what_i_do } = entry.data;
         }
       </div>
     </div>
-  </section>
+  </section> -->
 </Base>

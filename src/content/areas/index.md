@@ -1,6 +1,6 @@
 ---
-title: "MAR-SEV - Marmara Sağlık Eğitim ve Araştırma Vakfı"
-meta_title: "Hakkımızda"
+title: "FAALİYET ALANLARI"
+meta_title: "Faaliyet Alanları"
 draft: false
 
 # what_i_do:
@@ -21,10 +21,6 @@ draft: false
 ---
 
 
-Türkiye'de yaşayan herkese eşit, dengeli ve mümkün olan en yüksek düzeyde koruyucu ve iyileştirici sağlık hizmetleri ile eğitim ve diğer sosyal hizmetleri etkin bir biçimde sunabilmek için mezuniyet öncesi, mezuniyet sonrası ve hizmet içi eğitim yapan her düzeyde eğitim kurumları açmak, işletmek, seminerler, kurslar düzenlemek ve bu amaçla eğiticiler bulup çalıştırmak.
-
-#### VAKFIN FAALİYET ALANLARI
-
 <ol type="a">
    <li>Sağlık ve sağlıkla ilgili eğitim ve araştırma kurumları için gerekli olan araç, gereç, ders kitabı ve eğitim malzemelerinin ve tıbbi bakımla ilgili her türlü maddenin sağlanmasına ve bakımına, öğrencilerinin ihtiyaçlarının karşılanmasına katkıda bulunmak</li>
             <li>Her çeşit ve düzeyde sağlık kurumu açmak, işletmek, bina ve tesislerini yapmak, yapım ve onarımına yardımcı olmak.</li>
@@ -44,17 +40,4 @@ Türkiye'de yaşayan herkese eşit, dengeli ve mümkün olan en yüksek düzeyde
 </ol>
 
 
-#### BU ALANLARA İLİŞKİN FAALİYETLER 
-
-<ol>
-            <li>Veri toplamak, araştırmalar, bilimsel projeler gerçekleştirmek ve saha çalışmaları yapmak.</li>
-            <li>Kamuoyunun aydınlatılması için her türlü görsel-işitsel materyal geliştirmek, konulu ya da dokümanter film yapmak ve yayımlamak, piyes, oyun ve tiyatro çalışmaları yapmak.</li>
-            <li>Kamuoyu oluşturmak ve bu amaçla karar organları nezdinde girişimlerde bulunmak.</li>
-            <li>Radyo ve Televizyonların Kuruluşu hakkında kanuna aykırılık teşkil etmeyecek şekilde Vakıf bünyesinde görsel-işitsel prodüksiyonlar gerçekleştirebilecek bir birim oluşturmak.</li>
-            <li>Örgün ya da yaygın eğitim ve araştırma kurumları kurmak ve eğitim ve araştırma hizmetleri vermek.</li>
-            <li>Kongre, konferans, seminer ve sempozyumlar düzenlemek.</li>
-            <li>Çeşitli yarışmalar düzenlemek, teşvik ödülleri vermek.</li>
-            <li>İlgili alanlarda faaliyetler gösteren kuruluşlara teknik danışmanlık, araç, gereç yardımı yapmak ya da yaptırmak.</li>
-            <li>Sağlıklı insan gücü yetiştirilmesi amacına uygun olarak üreme ve çocuk sağlığı, aile planlaması klinikleri ile diğer sağlık hizmetlerini vermek.</li>
-        </ol>
 
