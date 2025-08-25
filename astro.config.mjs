@@ -16,6 +16,14 @@ export default defineConfig({
   image: {
     service: squooshImageService(),
   },
+  i18n: {
+    locales: ["tr", "en"],
+    defaultLocale: "tr",
+    routing: {
+      // TR stays at root (/), EN is prefixed (/en)
+      prefixDefaultLocale: false
+    }
+  },
   integrations: [
     react(),
     sitemap(),

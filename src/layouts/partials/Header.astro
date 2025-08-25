@@ -1,6 +1,7 @@
 ---
 import Logo from "@/components/Logo.astro";
-import menu from "@/config/menu.json";
+import menuTR from "@/config/menu.json";
+import menuEN from "@/config/menu-en.json";
 import { IoSearch } from "react-icons/io5";
 
 export interface ChildNavigationLink {
@@ -15,7 +16,12 @@ export interface NavigationLink {
   children?: ChildNavigationLink[];
 }
 
-const { main }: { main: NavigationLink[] } = menu;
+// Use Astro's i18n locale (falls back to "tr" if missing)
+const lang = Astro.currentLocale ?? "tr";
+
+// Choose menu file based on lang
+const menuData = lang === "en" ? menuEN : menuTR;
+const { main }: { main: NavigationLink[] } = menuData;
 ---
 
 <header class=" pt-6">
@@ -91,9 +97,9 @@ const { main }: { main: NavigationLink[] } = menu;
       <span class="mr-2 inline-block cursor-pointer p-1 text-dark md:mr-0 md:text-lg">
  <a
         class="transition hover:text-primary mx-1"
-        href="/search"
-        title="seach"
-        aria-label="seach"
+        href="/"
+        title="Türkçe"
+        aria-label="Türkçe"
       >
         TR
       </a> 
@@ -102,9 +108,9 @@ const { main }: { main: NavigationLink[] } = menu;
       </span>
        <a
         class=" text-dark transition hover:text-primary mx-1"
-        href="/search"
-        title="seach"
-        aria-label="seach"
+        href="/en"
+        title="English"
+        aria-label="English"
       >
         EN
       </a>

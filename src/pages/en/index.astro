@@ -1,0 +1,124 @@
+---
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import Pagination from "@/layouts/components/Pagination.astro";
+import Posts from "@/layouts/Posts.astro";
+import Books from "@/layouts/Books.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import { BsArrowRightCircle } from "react-icons/bs";
+import { getTaxonomy } from "@/lib/taxonomyParser.astro";
+import { humanize } from "@/lib/utils/textConverter";
+import { BiCategoryAlt } from "react-icons/bi";
+import { FaHashtag } from "react-icons/fa";
+
+const tags = await getTaxonomy("posts", "tags");
+const posts = await getSinglePage("posts");
+const sortedPosts = sortByDate(posts);
+const currentPosts = sortedPosts.slice(0,1)
+const pastEvents = sortedPosts.filter(post=> post.data.date ? post.data.date < new Date() : false).slice(1,5)
+
+const books = await getSinglePage("books");
+const sortedBooks = sortByDate(books);
+const totalPagesOfBooks = Math.ceil(books.length / config.settings.pagination);
+const currentBooks = sortedBooks.slice(0, config.settings.pagination);
+
+const categories = await getTaxonomy("posts", "categories");
+
+
+---
+
+<Base>
+  <div class="grid grid-cols-1 md:grid-cols-5">
+    <div class="col-span-1">
+      <section class="section">
+        <div class="container mb-40">
+          <h1 class="h5 mb-5">Announcements</h1>
+          <Posts posts={currentPosts} className="mb-16" fluid={true} />
+          <hr class="my-10"/>
+         </div>
+         
+        
+      </section>
+         </div>
+    <div class="col-span-3">
+      <section class="section">
+        <div class="container ">
+          <h1 class="h2 mb-5">MARSEV</h1>
+         The Marmara Health, Education, and Research Foundation is a non-profit organization that aims to contribute to primary healthcare and education by developing projects in this field. Its mission is to provide effective, accessible, and high-quality preventative and curative healthcare, as well as educational and other social services, to everyone living in Turkey. To achieve this, the foundation establishes and operates educational institutions at all levels, offering undergraduate, postgraduate, and in-service training, and organizes seminars and courses.
+          <hr class="my-10"/>
+         </div>
+         
+      
+      </section>
+     <section class="section">
+    <div class="container">
+          <h1 class="h2 mb-5">Past Activites</h1>
+          <Posts posts={pastEvents} className="mb-16" />
+          <div class="flex justify-end">
+            <a
+            href={`/posts`}
+            class="inline-flex items-center text-primary transition duration-200 hover:opacity-70"
+          >
+            Tümünü Gör <BsArrowRightCircle className="inline ml-2" />
+          </a>
+          </div>
+          
+        </div>
+  </section>
+   <section class="section">
+        <div class="container">
+          <h2 class="mb-5">Books</h2>
+          <Books books={currentBooks} className="mb-16" />
+          <Pagination currentPage={1} totalPages={totalPagesOfBooks} />
+        </div>
+      </section>
+    </div>
+    
+    <div class="col-span-1">
+      <section class="pt-20 mb-5">
+        <div class="container text-center">
+          <h1 class="h5 mb-3">Categories</h1>
+          <ul class="mx-4">
+            {
+              categories.map((category) => (
+                <li>
+                  <a
+                    href={`/categories/${category}`}
+                    class="rounded-lg bg-theme-light px-4 py-2 text-dark transition hover:bg-primary hover:text-white flex items-center group"
+                  >
+                    <BiCategoryAlt className="mr-1 text-primary group-hover:text-white transition h-6 w-6 scale-75" />
+                    <>{humanize(category || "")}</>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </section>
+      <section class="my-5">
+        <div class="container text-center">
+          <h1 class="h5 mb-3">Tags</h1>
+          <ul class="mx-4 text-start">
+            {
+              tags.map((tag) => (
+                <li class="inline-block">
+                  <a
+                    href={`/tags/${tag}`}
+                    class="rounded-lg bg-theme-light px-4 py-2 text-dark transition hover:bg-primary hover:text-white flex items-center group"
+                  >
+                    <FaHashtag className="mr-1 text-primary group-hover:text-white transition" />
+                    <>{humanize(tag || "")}</>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+
+  
+</Base>

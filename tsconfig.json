@@ -16,7 +16,9 @@
       "@/shortcodes/*": ["./src/layouts/shortcodes/*"],
       "@/helpers/*": ["./src/layouts/helpers/*"],
       "@/partials/*": ["./src/layouts/partials/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"],
+      "@/config/": ["./src/config/*"],
+      "@/layouts/*": ["./src/layouts/*"],
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.astro"],
