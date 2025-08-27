@@ -2,6 +2,7 @@
 title: "Toplumsal Cinsiyet Eşitliği için Güçlü Sivil Alan Projesi"
 description: "Toplumsal Cinsiyet Eşitliği için Güçlü Sivil Alan Projesi"
 date: 2024-12-05T05:00:00Z
+lang: "tr"
 image: "/images/posts/un.webp"
 categories: ["etkinlik"]
 authors: ["MARSEV"]

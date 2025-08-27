@@ -2,6 +2,7 @@
 title: Multidisipliner Çalışmada Geri Bildirim Ve Refleksiyon Kursu
 description: "meta description"
 date: 2024-03-07T06:00:00+00:00
+lang: "tr"
 image: "/images/posts/multidisipliner.webp"
 categories: ["kurs"]
 authors: ["MARSEV"]

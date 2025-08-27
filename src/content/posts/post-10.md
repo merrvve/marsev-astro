@@ -2,6 +2,7 @@
 title: "Sağlık Profesyoneli Eğitiminde Ölçme ve Değerlendirme Kurs"
 description: "Sağlık Profesyoneli Eğitiminde Ölçme ve Değerlendirme Kurs"
 date: 2025-01-24T05:00:00Z
+lang: "tr"
 image: "/images/posts/spod.jpg"
 categories: ["etkinlik"]
 authors: ["MARSEV"]

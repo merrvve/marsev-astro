@@ -2,6 +2,7 @@
 title: "2. Ulusal Birinci Basamak Sağlık Hizmetleri Kongresi"
 description: "2. Ulusal Birinci Basamak Sağlık Hizmetleri Kongresi"
 date: 2024-12-08T05:00:00Z
+lang: "tr"
 image: "/images/posts/kongre-duyuru.webp"
 categories: ["etkinlik"]
 authors: ["MARSEV"]

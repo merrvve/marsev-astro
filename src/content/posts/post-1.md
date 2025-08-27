@@ -2,6 +2,7 @@
 title: "Şiddete Maruz Kalan Kadınlara Yönelik Sağlık Hizmet Mekanizmalarının Güçlendirilmesi Toplantısı"
 description: "Birinci Basamak Sağlık Çalışanları Kadına Yönelik Şiddeti Önleme Eğitim ve Farkındalık Grubu olarak İstanbul’da TAP Vakfı ve diğer katılımcılar ile bir araya geldik"
 date: 2024-08-14T05:00:00Z
+lang: "tr"
 image: "/images/posts/tap-2.webp"
 categories: ["etkinlik"]
 authors: ["MARSEV"]

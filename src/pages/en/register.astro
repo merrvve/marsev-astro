@@ -1,0 +1,123 @@
+---
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import { getEntryBySlug } from "astro:content";
+import { FaAddressCard, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+
+const entry = await getEntryBySlug("pages", "register");
+const { address, email, phone } = config.contactinfo;
+const { title, description, meta_title, image } = entry.data;
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+>
+  <section class="section">
+    <div class="container">
+      <h1 set:html={markdownify(title)} class="h2 page-heading" />
+      <div class="row md:gx-5 gy-5">
+        
+        <div>
+          <form class="contact-form row gy-2 justify-center">
+            <div class="col-12 mb-3">
+              <p class="mb-1">
+                <strong>Kurs ücreti: </strong>
+                 2500 TL (%20 KDV dahil)
+              </p>
+              <p class="mb-1">
+                <strong>IBAN: </strong>
+                 TR78 0001 5001 5800 7316 4737 98 <br>
+                 <strong>Marmara Sağlık Eğitim ve Araştırma Vakfı İşletmesi</strong>
+              </p>
+            </div>
+            <div class="lg:col-6">
+              <label class="mb-2 block" for="name">Ad Soyad <span class="text-red-600">*</span></label>
+              <input class="form-input w-full" name="name" type="text" required />
+            </div>
+            <div class="lg:col-6">
+              <label class="mb-2 block" for="email">E-posta <span class="text-red-600">*</span></label>
+              <input class="form-input w-full" name="email" type="email" required />
+            </div>
+            <div class="lg:col-6">
+              <label class="mb-2 block" for="phone">Telefon<span class="text-red-600">*</span></label>
+              <input
+                class="form-input w-full"
+                name="phone"
+                type="text"
+              />
+            </div>
+            <div class="lg:col-6">
+              <label class="mb-2 block" for="work">Çalıştığı Kurum<span class="text-red-600">*</span></label>
+              <input
+                class="form-input w-full"
+                name="work"
+                type="text"
+              />
+            </div>
+            <div class="col-12">
+              <label class="mb-2 block" for="subject">Kayıt olunacak etkinlik</label>
+              <input
+                class="form-input w-full"
+                name="subject"
+                type="text"
+                disabled
+                placeholder="Sağlık Profesyoneli Eğitiminde Ölçme ve Değerlendirme Kursu 24-25 Ocak 2025"
+                value="Sağlık Profesyoneli Eğitiminde Ölçme ve Değerlendirme Kursu 24-25 Ocak 2025"
+              />
+            </div>
+            
+            <div class="col-12">
+              <button class="btn btn-primary mt-2" type="submit">Ön Kayıt Oluştur</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+
+<script>
+  const form = document.querySelector('form');
+  if(form) {
+    form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(form);
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),  
+        phone: formData.get('phone'),
+        work: formData.get('work'),
+        subject: "Sağlık Profesyoneli Eğitiminde Ölçme ve Değerlendirme Kursu 24-25 Ocak 2025",
+        
+    };
+    fetch('https://script.google.com/macros/s/AKfycbw_B-P5i0UYcugbLQZczMOPKJNR5hyuQKcz7aZ7G48JeTEUVzhQeczI9OWRYXuaRQpluQ/exec', {
+        method: 'POST',
+        mode: "no-cors",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(next =>{
+      // const message = document.createElement('p');
+      // message.innerHTML="Siparişiniz Başarıyla oluşturuldu."
+      // document.getElementById('formMessage')?.appendChild(message);
+      window.alert("Sağlık Profesyoneli Eğitiminde Ölçme ve Değerlendirme Kursu (24-25 Ocak 2025) etkinliğine ön kaydınız başarıyla oluşturuldu. Ödemeniz gerçekleştiğinde kaydınız tamamlanacaktır.")
+      window.history.back();
+    })
+    .catch(error => {
+      const message = document.createElement('p');
+      message.innerHTML="Mesajınız iletilirken bir hatayla karşılaşıldı."
+      document.getElementById('formMessage')?.appendChild(message)
+    });
+    });
+
+  }
+
+</script>

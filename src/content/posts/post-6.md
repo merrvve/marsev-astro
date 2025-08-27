@@ -2,6 +2,7 @@
 title: "Bilimsel Araştırma ve Tez Yazım Kursu"
 description: "Bilimsel Araştırma ve Tez Yazım Kursu"
 date: 2024-11-02T05:00:00Z
+lang: "tr"
 image: "/images/posts/tezkursu.png"
 categories: ["etkinlik"]
 authors: ["MARSEV"]

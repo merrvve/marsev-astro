@@ -1,6 +1,7 @@
 ---
 title: Study Protokol Kursu
 description: "meta description"
+lang: "tr"
 date: 2024-03-07T06:00:00+00:00
 image: "/images/posts/study-protokol-kursu-afişi.webp"
 categories: ["kurs"]

@@ -2,77 +2,77 @@
   "main": [
     {
       "name": "Home",
-      "url": "/"
+      "url": "/en/"
     },
     {
       "name": "About",
-      "url": "/about",
+      "url": "/en/about",
       "hasChildren": true,
       "children": [
         {
           "name": "Aim of Foundation",
-          "url": "/about"
+          "url": "/en/about"
         },
         {
           "name": "History",
-          "url": "/about"
+          "url": "/en/about"
         },
         {
           "name": "Areas of Operation",
-          "url": "/areas"
+          "url": "/en/areas"
         },
         {
           "name": "Board Members",
-          "url": "/board"
+          "url": "/en/board"
         }
       ]
     },
     
     {
       "name": "Activities",
-      "url": "/categories",
+      "url": "/en/categories",
       "hasChildren": true,
       "children": [
       {
         "name": "Activities",
-        "url": "/categories/etkinlik"
+        "url": "/en/categories/etkinlik"
       },
       {
         "name": "Categories",
-        "url": "/categories"
+        "url": "/en/categories"
       },
       {
         "name": "Tags",
-        "url": "/tags"
+        "url": "/en/tags"
       }
     ]
     },
     {
       "name": "Contact",
-      "url": "/contact"
+      "url": "/en/contact"
     },
     {
       "name": "Books",
-      "url": "/books"
+      "url": "/en/books"
     },
     
     {
       "name": "Donation",
-      "url": "/bagis"
+      "url": "/en/bagis"
     }
   ],
   "footer": [
     {
       "name": "About",
-      "url": "/about"
+      "url": "/en/about"
     },
     {
       "name": "Contact",
-      "url": "/contact"
+      "url": "/en/contact"
     },
     {
       "name": "Donation",
-      "url": "/bagis"
+      "url": "/en/bagis"
     }
   ]
 }
