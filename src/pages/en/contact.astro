@@ -11,14 +11,14 @@ const { title, description, meta_title, image } = entry.data;
 ---
 
 <Base
-  title={title}
+  title="Contact"
   meta_title={meta_title}
   description={description}
   image={image}
 >
   <section class="section">
     <div class="container">
-      <h1 set:html={markdownify(title)} class="h2 page-heading" />
+      <h1 set:html={markdownify("Contact")} class="h2 page-heading" />
       <div class="row md:gx-5 gy-5">
         <div class="sm:col-5 md:col-4">
           <p class="mb-8 text-2xl font-bold text-theme-dark">Contact</p>

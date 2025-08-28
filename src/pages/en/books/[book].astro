@@ -1,0 +1,42 @@
+---
+import Base from "@/layouts/Base.astro";
+import Default from "@/layouts/Default.astro";
+import BookSingle from "@/layouts/BookSingle.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import type { TPost } from "@/types";
+
+const getBooks = (await getSinglePage("books")) as TPost[];
+const booksSlug = getBooks.map((item) => item.slug);
+
+export async function getStaticPaths() {
+  const books = await getSinglePage("books");
+  const pages = await getSinglePage("pages");
+  const allPages = [...pages, ...books];
+
+  const paths = allPages.map((page: any) => ({
+    params: {
+      book: page.slug,
+    },
+    props: { page },
+  }));
+  return paths;
+}
+
+const { page } = Astro.props;
+const { title, meta_title, description, image } = page.data;
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+>
+  {
+    booksSlug.includes(page.slug) ? (
+      <BookSingle book={page} />
+    ) : (
+      <Default data={page} />
+    )
+  }
+</Base>

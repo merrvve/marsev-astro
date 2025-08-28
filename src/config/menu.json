@@ -6,28 +6,17 @@
     },
     {
       "name": "Hakkımızda",
-      "url": "/about",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Kuruluş Amacı",
-          "url": "/about"
-        },
-        {
-          "name": "Tarihçe",
-          "url": "/about"
-        },
-        {
-          "name": "Faaliyet Alanları",
-          "url": "/areas"
-        },
-        {
+      "url": "/about"
+    },
+    {
           "name": "Yönetim Kurulu",
           "url": "/board"
-        }
-      ]
-    },
-    
+        },
+{
+          "name": "Projeler",
+          "url": "/projects"
+        },
+
     {
       "name": "Etkinlikler",
       "url": "/categories",

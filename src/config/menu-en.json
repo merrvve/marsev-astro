@@ -2,32 +2,21 @@
   "main": [
     {
       "name": "Home",
-      "url": "/en/"
+      "url": "/en"
     },
     {
       "name": "About",
-      "url": "/en/about",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Aim of Foundation",
-          "url": "/en/about"
-        },
-        {
-          "name": "History",
-          "url": "/en/about"
-        },
-        {
-          "name": "Areas of Operation",
-          "url": "/en/areas"
-        },
-        {
+      "url": "/en/about"
+      
+    },
+     {
           "name": "Board Members",
           "url": "/en/board"
-        }
-      ]
-    },
-    
+        },
+         {
+          "name": "Projects",
+          "url": "/en/projects"
+        },
     {
       "name": "Activities",
       "url": "/en/categories",
