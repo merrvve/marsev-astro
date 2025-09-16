@@ -12,5 +12,5 @@ draft: false
 
 The Fall semester program for the Research and Thesis Writing Course for Medical Specialization Students has been announced.
 
-<img src="images\posts\ito-2.jpg">
+<img src="/images/posts/ito-2.jpg">
 
