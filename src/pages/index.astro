@@ -17,7 +17,7 @@ import CurrentPost from "@/layouts/CurrentPost.astro";
 const tags = await getTaxonomy("posts", "tags");
 const posts = await getCollection("posts", ({ data }) => data.lang === "tr");
 const sortedPosts = sortByDate(posts);
-const currentPosts = sortedPosts.slice(0,1)
+const currentPosts = sortedPosts.slice(0,2)
 const pastEvents = sortedPosts.filter(post=> post.data.date ? post.data.date < new Date() : false).slice(1,5)
 
 const books = await getSinglePage("books");
