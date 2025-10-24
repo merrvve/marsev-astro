@@ -16,7 +16,7 @@ draft: false
 
 ⏱ Bildiri gönderimi için son tarih: 31 Ocak 2025
 
-Kongre kitabına [buradan](/docs/bibak2024.pdf) ulaşabilirsiniz.
+Kongre kitabına [buradan](/docs/bibak2025.pdf) ulaşabilirsiniz.
 
 📝 Detaylar ve kayıt için: www.bibak-marsev.org
 

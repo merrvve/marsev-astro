@@ -20,8 +20,7 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 
-//const posts = await getSinglePage("posts");
-const posts = await getCollection("posts", ({ data }) => data.lang === "tr");
+const posts = await getCollection("posts", ({ data }) => data.lang === "en");
 const filterByTags = taxonomyFilter(posts, "tags", tag);
 const sortedPosts = sortByDate(filterByTags);
 
@@ -31,7 +30,7 @@ const title = humanize(tag || "");
 <Base title={title || "Tag"}>
   <div class="section">
     <div class="container">
-      <p class="text-center text-2xl mb-4">Gönderiler</p>
+      <p class="text-center text-2xl mb-4">Posts</p>
       <h1 class="h2 mb-16 text-center text-primary">{title}</h1>
       <Posts posts={sortedPosts} fluid={false} />
     </div>

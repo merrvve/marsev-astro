@@ -27,6 +27,10 @@
         "url": "/categories/etkinlik"
       },
       {
+        "name": "Kongreler",
+        "url": "/tags/kongre"
+      },
+      {
         "name": "Kategoriler",
         "url": "/categories"
       },

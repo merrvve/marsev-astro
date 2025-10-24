@@ -6,32 +6,30 @@ import { getTaxonomy } from "@/lib/taxonomyParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import taxonomyFilter from "@/lib/utils/taxonomyFilter";
 import { humanize } from "@/lib/utils/textConverter";
-import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const tags = await getTaxonomy("posts", "tags");
+  const categories = await getTaxonomy("posts", "categories");
 
-  return tags.map((tag) => {
+  return categories.map((category) => {
     return {
-      params: { tag },
+      params: { category },
     };
   });
 }
 
-const { tag } = Astro.params;
+const { category } = Astro.params;
 
-//const posts = await getSinglePage("posts");
-const posts = await getCollection("posts", ({ data }) => data.lang === "tr");
-const filterByTags = taxonomyFilter(posts, "tags", tag);
-const sortedPosts = sortByDate(filterByTags);
+const posts = await getSinglePage("posts");
+const filterByCategory = taxonomyFilter(posts, "categories", category);
+const sortedPosts = sortByDate(filterByCategory);
 
-const title = humanize(tag || "");
+const title = humanize(category || "");
 ---
 
-<Base title={title || "Tag"}>
+<Base title={title || "Category"}>
   <div class="section">
     <div class="container">
-      <p class="text-center text-2xl mb-4">Gönderiler</p>
+      <p class="text-center text-2xl mb-4">Category</p>
       <h1 class="h2 mb-16 text-center text-primary">{title}</h1>
       <Posts posts={sortedPosts} fluid={false} />
     </div>
