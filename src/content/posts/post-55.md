@@ -12,6 +12,7 @@ draft: false
 
 Kalitatif Araştırma Kursu Ocak 2026'da gerçekleştirilecektir.
 
+<img src="/images/posts/kalitatif2.png">
 
 
 
