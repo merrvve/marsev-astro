@@ -1,7 +1,7 @@
 ---
 title: "Qualitative Research Course"
 description: "Qualitative Research Course"
-date: 2026-01-27T05:00:00Z
+date: 2023-01-27T05:00:00Z
 lang: "en"
 image: "/images/posts/kalitatif1.png"
 categories: ["kurs"]

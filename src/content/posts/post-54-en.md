@@ -1,6 +1,6 @@
 ---
-title: "Tıpta Uzmanlık Öğrencilerine Yönelik Araştırma ve Tez Yazım Kursu"
-description: "Tıpta Uzmanlık Öğrencilerine Yönelik Araştırma ve Tez Yazım Kursu"
+title: "Research and Thesis Writing Course for Medical Specialization Students"
+description: "Research and Thesis Writing Course for Medical Specialization Students"
 date: 2025-10-04T05:00:00Z
 lang: "en"
 image: "/images/posts/ito-1.jpg"

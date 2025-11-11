@@ -7,7 +7,7 @@ import { sortByDate } from "@/lib/utils/sortFunctions";
 import Pagination from "@/layouts/components/Pagination.astro";
 import { getCollection } from "astro:content";
 
-const posts = await getCollection("posts", ({ data }) => data.lang === "tr");
+const posts = await getCollection("posts", ({ data }) => data.lang === "en");
 const sortedPosts = sortByDate(posts);
 const totalPagesOfPosts = Math.ceil(posts.length / config.settings.pagination);
 const currentPosts = sortedPosts.slice(0, config.settings.pagination);
@@ -16,7 +16,7 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
   <section class="section">
     <div class="container">
       <Posts posts={currentPosts} className="mb-16" />
-      <Pagination currentPage={1} totalPages={totalPagesOfPosts} />
+      <Pagination currentPage={1} totalPages={totalPagesOfPosts} lang="en" />
     </div>
   </section>
 </Base>
