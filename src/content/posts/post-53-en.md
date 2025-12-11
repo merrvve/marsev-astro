@@ -1,7 +1,7 @@
 ---
 title: "3rd Primary Health Care Services Congress"
 description: "3rd Primary Health Care Services Congress"
-date: 2026-22-03T05:00:00Z
+date: 2026-03-26T05:00:00Z
 lang: "en"
 image: "/images/posts/bibak3.png"
 categories: ["kongre"]

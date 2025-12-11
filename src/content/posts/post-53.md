@@ -1,7 +1,7 @@
 ---
 title: "3. Birinci Basamak Sağlık Hizmetleri Kongresi"
 description: "3. Birinci Basamak Sağlık Hizmetleri Kongresi"
-date: 2026-22-03T05:00:00Z
+date: 2026-03-26T05:00:00Z
 lang: "tr"
 image: "/images/posts/bibak3.png"
 categories: ["kongre"]

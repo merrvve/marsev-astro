@@ -12,6 +12,9 @@ draft: false
 
 Qualitative research course
 
+<img src="/images/posts/ref-p.jfif">
+<img src="/images/posts/serap-cifcili.jpeg">
+
 
 
 

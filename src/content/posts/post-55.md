@@ -13,6 +13,7 @@ draft: false
 Kalitatif Araştırma Kursu Ocak 2023'te gerçekleştirilmiştir.
 
 <img src="/images/posts/ref-p.jfif">
+<img src="/images/posts/serap-cifcili.jpeg">
 <img src="/images/posts/kalitatif2.png">
 
 
