@@ -11,8 +11,7 @@ import config from "./src/config/config.json";
 // https://astro.build/config
 export default defineConfig({
   site: "https://marsev.org",
-  base: config.site.base_path ? config.site.base_path : "/",
-  trailingSlash: config.site.trailing_slash ? "always" : "never",
+  base: "/",
   image: {
     service: squooshImageService(),
   },
@@ -27,7 +26,7 @@ export default defineConfig({
   integrations: [
     
     react(),
-    sitemap(),
+    sitemap({i18n: null}),
     tailwind({
       config: {
         applyBaseStyles: false,
