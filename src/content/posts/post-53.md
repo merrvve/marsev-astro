@@ -12,6 +12,8 @@ draft: false
 
 3. Birinci Basamak Sağlık Hizmetleri Kongresi 22-26 Mart 2026'da gerçekleştirlecektir.
 
+Ayrıntılı bilgi ve kayıt için lütfen <a href="https://bibak-marsev.org/kayit/">tıklayınız. </a>
+
 ## Davet
 
 Birinci Basamak Sağlık Hizmetlerinin Değerli Çalışanları,
